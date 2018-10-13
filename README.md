@@ -1,2 +1,0 @@
-# kimhyoyeong.github.io
-work
