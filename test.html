@@ -35,7 +35,8 @@
 		<!--search.js-->
 		<script src="https://prd-en-int.ap-beauty.com/int/en/resource/js/swiper-bundle.min.js"></script>
 		<!--swiper-bundle.min.js-->
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 		<!-- Google Tag Manager -->
 		<script>
 			(function (w, d, s, l, i) {
@@ -685,9 +686,18 @@
 				}
 
 				//scrollAnchor(".sclElm");
-				scrollActive();
+				/* scrollActive();
 				window.addEventListener("scroll", optimizeAnimation(scrollActive), {
 					passive: true,
+				}); */
+
+				ScrollTrigger.create({
+					trigger: ".cont_1",
+					start: "top top",
+					end: "100%",
+					pin: true,
+					markers: false,
+					toggleClass: {targets:  ".cont_1", className: "active"},
 				});
 
 				//dev add
