@@ -34,9 +34,9 @@
 		<script src="https://prd-en-int.ap-beauty.com/int/en/resource/js/search.js"></script>
 		<!--search.js-->
 		<script src="https://prd-en-int.ap-beauty.com/int/en/resource/js/swiper-bundle.min.js"></script>
+		<!--swiper-bundle.min.js-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-		<!--swiper-bundle.min.js-->
 		<!-- Google Tag Manager -->
 		<script>
 			(function (w, d, s, l, i) {
@@ -76,196 +76,47 @@
 			var AP_DATA_COUNTRY = "int";
 			var AP_DATA_LANG = "en";
 			var AP_DATA_BREAD = "HOME > DISCOVER > OUR STORY";
-
-			console.log(AP_DATA_CHANNEL);
 		</script>
+		<style>
+			.our_story {margin-top:0 !important}
+				.our_story .breadcrumbs {top:17.7rem}
+				.scroll .our_story .breadcrumbs {top:10.3rem}
+				.our_story .story_keyvisual{position: relative}
+				.our_story .story_keyvisual .kv_video{overflow:hidden;height: 100vh;}
+				.our_story .story_keyvisual .kv_video video{height:100%;object-fit:cover}
+				.our_story .story_keyvisual .btn_scroll {color:#767676; padding-bottom:4.2rem; position:absolute; bottom:2rem; left:50%; transform: translateX(-50%); z-index:100}
+				.our_story .story_keyvisual .btn_scroll::after {content:""; display:block; color:#fff; width:3.6rem; height:1.3rem; background:url('https://d3dims7uu70rdw.cloudfront.net/image/384224417642/image_3afi6t3t0t7td1ai34l2qin56n/-FPNG') no-repeat; position:absolute; left:calc(50% - 1.8rem)}
+				.our_story .story_brand{overflow:hidden;position: relative;height:100vh;background:#888 url("/int/en/resource/images/discover/our_story_brandfilm_pc_int_231027.jpg") no-repeat;background-size: cover}
+		</style>
 
 		<div id="wrap">
-			<!-- header -->
-			<header id="header" ap-type="header" class="">
+			<header id="header" ap-type="header">
 				<div class="layout_inner">
-					<a href="javascript:void(0)" class="logo" ap-click-area="Header" ap-click-name="click Header" ap-click-data="Amorepacific Logo">AMOREPACIFIC</a>
-
+					<a href="/int/en/index.html" ap-click-area="Header" ap-click-name="click Header" ap-click-data="Amorepacific Logo" class="logo">AMOREPACIFIC</a>
 					<nav id="gnb" ap-type="gnb">
 						<!-- 23.02.08 태그변경 -->
-						<button class="nv_btn" tabindex="0">AMORE PACIFIC Global Navigation Bar</button>
-						<div class="gnb_inner">
-							<ul class="gnb-1dep">
-								<!-- THE ESSENTIALS -->
-								<li class="gnb-1dep-item">
-									<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="THE ESSENTIALS">
-										<strong class="d1_a">THE ESSENTIALS</strong>
-									</a>
-									<button class="btn_lnb">expansion</button>
-									<div class="lnb">
-										<ul class="gnb-2dep">
-											<li class="gnb-2dep-item">
-												<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="THE ICON">
-													<img src="../../resource/INT/images/temp/@gnb_img_01.png" alt="THE ICON IMAGE" />
-													<p>THE ICON</p>
-												</a>
-											</li>
-											<li class="gnb-2dep-item last">
-												<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="NEWNESS">
-													<img src="../../resource/INT/images/temp/@gnb_img_02.png" alt="NEWNESS IMAGE" />
-													<p>NEW&BEST</p>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-
-								<!-- SKINCARE -->
-								<li class="gnb-1dep-item">
-									<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="SKINCARE">
-										<strong class="d1_a">SKINCARE</strong>
-									</a>
-									<button class="btn_lnb">expansion</button>
-									<div class="lnb">
-										<div class="screen">
-											<ul class="gnb-2dep">
-												<li class="gnb-2dep-item">
-													<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="">BY CATEGORY</a>
-													<ul class="gnb-3dep">
-														<li class="gnb-3dep-item">
-															<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="SERUM & ESSENCE">SERUM & ESSENCE</a>
-														</li>
-														<li class="gnb-3dep-item">
-															<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="LOTION & EMULSION">LOTION & EMULSION</a>
-														</li>
-														<li class="gnb-3dep-item">
-															<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="EYE & LIP CARE">EYE & LIP CARE</a>
-														</li>
-														<li class="gnb-3dep-item">
-															<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="CREAM">CREAM</a>
-														</li>
-													</ul>
-												</li>
-												<li class="gnb-2dep-item">
-													<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="BY CONCERN">BY CONCERN</a>
-													<ul class="gnb-3dep">
-														<li class="gnb-3dep-item">
-															<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="ANTI-AGING">ANTI-AGING</a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-											<div class="banner last">
-												<a href="javascript:void(0)">
-													<div class="title">
-														<!-- 23.02.08 태그변경 -->
-														<strong>PRIME RESERVE</strong>
-														<span>Elevate to Prime Skin, Preserve It Forever</span>
-													</div>
-													<p class="img">
-														<img src="https://amc.apglobal.com/image/384224417642/image_dqauqnua3947l0i50m23m47r1f/-FJPG" alt="PRIME RESERVE" />
-													</p>
-												</a>
-											</div>
-										</div>
-									</div>
-								</li>
-
-								<!-- PRIME RESERVE -->
-								<li class="gnb-1dep-item">
-									<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="PRIME RESERVE">
-										<strong class="d1_a">PRIME RESERVE</strong>
-									</a>
-									<button class="btn_lnb">expansion</button>
-									<div class="lnb">
-										<!-- 221229 font-sm 추가 -->
-										<ul class="gnb-2dep font-sm">
-											<li class="gnb-2dep-item">
-												<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="ESSENCE LOTION">
-													<img src="../../resource/INT/images/temp/@gnb_img_04.png" alt="ESSENCE LOTION" />
-													<p>ESSENCE LOTION</p>
-												</a>
-											</li>
-											<li class="gnb-2dep-item">
-												<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="SERUM">
-													<img src="../../resource/INT/images/temp/@gnb_img_05.png" alt="SERUM" />
-													<p>SERUM</p>
-												</a>
-											</li>
-											<li class="gnb-2dep-item">
-												<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="CREAM">
-													<img src="../../resource/INT/images/temp/@gnb_img_07.png" alt="CREAM" />
-													<p>CREAM</p>
-												</a>
-											</li>
-											<li class="gnb-2dep-item last">
-												<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="EYE & EXPRESSION">
-													<img src="../../resource/INT/images/temp/@gnb_img_06.png" alt="EYE CREAM" />
-													<p>EYE CREAM</p>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-
-								<!-- DISCOVER -->
-								<li class="gnb-1dep-item">
-									<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="DISCOVER">
-										<strong class="d1_a">DISCOVER</strong>
-									</a>
-									<button class="btn_lnb">expansion</button>
-									<div class="lnb active">
-										<div class="screen">
-											<ul class="gnb-2dep">
-												<li class="gnb-2dep-item">
-													<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="OUR STORY">OUR STORY</a>
-												</li>
-												<li class="gnb-2dep-item">
-													<a href="javascript:void(0)" ap-click-area="GNB" ap-click-name="click GNB" ap-click-data="OUR SERVICES">OUR SERVICES</a>
-												</li>
-											</ul>
-											<div class="banner last">
-												<a href="javascript:void(0)">
-													<div class="title">
-														<!-- 23.02.08 태그변경 -->
-														<strong>ABSOLUTE PERFORMANCE</strong>
-														<span>Surpassing Natural Limitations</span>
-													</div>
-													<p class="img">
-														<img src="https://amc.apglobal.com/image/384224417642/image_rka850a3610cldkgbbo84fjc2u/-FJPG" alt="ABSOLUTE PERFORMANCE" />
-													</p>
-												</a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
+						<button class="nv_btn">AMORE PACIFIC Global Navigation Bar</button>
+						<div class="gnb_inner" id="gnb_inner"></div>
 						<button class="gnb_close">close</button>
 					</nav>
-
 					<div class="utility">
 						<!-- 언어 설정 -->
 						<div class="language">
 							<button class="btn_open">INTERNATIONAL/ENGLISH</button>
 							<div class="box">
 								<strong class="title">Language</strong>
-								<ul>
-									<!-- 활성화 되있는 언어 -->
-									<li class="active">
-										<a href="javascript:viod(0)" lang="en" ap-click-area="header" ap-click-name="Select Country" ap-click-data="us/en">INTERNATIONAL/ENGLISH</a>
-									</li>
-									<li>
-										<a href="javascript:viod(0)" lang="zh" ap-click-area="header" ap-click-name="Select Country" ap-click-data="hk/zh">中國/中文</a>
-									</li>
-								</ul>
+								<ul id="language_list"></ul>
 								<button class="language_close">close</button>
 							</div>
 						</div>
 						<!-- 기타 메뉴 -->
 						<div class="utility_item">
-							<a href="javascript:void(0)" class="btn_store" ap-click-area="Store" ap-click-name="click - Find a Store" ap-click-data="Find Store">STORE</a>
-							<a href="https://www.instagram.com/amorepacificgroup.official" target="_blank" title="new window" class="btn_insragram" ap-click-area="header" ap-click-name="click header" ap-click-data="INSTAGRAM">INSTAGRAM</a>
+							<a href="/int/en/util/store/store.html" class="btn_store" ap-click-area="Store" ap-click-name="click - Find a Store" ap-click-data="Find Store">STORE</a
+							><a href="https://www.instagram.com/amorepacificgroup.official" target="_blank" title="new window" class="btn_insragram" ap-click-area="header" ap-click-name="click header" ap-click-data="INSTAGRAM">INSTAGRAM</a>
 						</div>
 						<a href="javascript:void(0)" class="btn_search" ap-click-area="header" ap-click-name="click header" ap-click-data="TOTAL SEARCH">TOTAL SEARCH</a>
 					</div>
 				</div>
-
 				<!-- 검색 -->
 				<div class="search_wrap">
 					<section class="search_innre">
@@ -273,31 +124,16 @@
 							<!-- 23.02.08 태그변경 -->
 							<strong class="title">search</strong>
 							<div class="input">
-								<label>
-									<input type="search" placeholder="Enter a search term" />
-								</label>
+								<label><input type="search" id="global-search" placeholder="Enter a search term" onkeypress="SEARCH.enterGlobalSearch(event)" maxlength="500" /></label>
+								<button class="search_del" id="global_search_del">del</button>
 							</div>
-							<button ap-click-area="header" ap-click-name="click Header">SEARCH</button>
+							<button ap-click-area="header" ap-click-name="click Header" onclick="SEARCH.insertQuery('global-search')">SEARCH</button>
 							<!-- 자동완성 최대 10개 -->
-							<div class="autocomplete">
-								<a href="javascript:void(0)" ap-click-area="header" ap-click-name="click autocomplete" ap-click-data="Retrinity">Retrinity</a>
-								<a href="javascript:void(0)" ap-click-area="header" ap-click-name="click autocomplete" ap-click-data="Retrinity Cream">Retrinity Cream</a>
-								<a href="javascript:void(0)" ap-click-area="header" ap-click-name="click autocomplete" ap-click-data="Retrinity Essence Lotion">Retrinity Essence Lotion</a>
-								<a href="javascript:void(0)" ap-click-area="header" ap-click-name="click autocomplete" ap-click-data="Retrinity Eye and Expression Cream">Retrinity Eye and Expression Cream</a>
-								<a href="javascript:void(0)" ap-click-area="header" ap-click-name="click autocomplete" ap-click-data="Retrinity Serum">Retrinity Serum</a>
-								<a href="javascript:void(0)" ap-click-area="header" ap-click-name="click autocomplete" ap-click-data="Retrinity Sample">Retrinity Sample</a>
-							</div>
+							<div class="autocomplete" style="display: none"></div>
 						</div>
 						<div class="search_keyword">
 							<strong>Recommended</strong>
-							<div class="keyword_item">
-								<button>Anti-Aging</button>
-								<button>Skincare</button>
-								<button>Retrinity</button>
-								<button>Prime Reserve Serum Anti-Aging</button>
-								<button>Serum</button>
-								<button>Prime Reserve</button>
-							</div>
+							<div class="keyword_item"></div>
 						</div>
 					</section>
 					<button class="btn_close">
@@ -305,353 +141,340 @@
 					</button>
 				</div>
 				<!-- // 검색 -->
-
-				<div class="special_menu">
+				<!-- Special menu-->
+				<div class="special_menu" id="special_menu" style="display: none">
 					<!-- 23.02.08 태그변경 -->
 					<strong>SPECIAL MENU</strong>
 					<button class="open_btn">open</button>
-					<div class="link">
-						<!-- <a href="javascript:void(0)" ap-click-area="floating menu" ap-click-name="click floating menu" ap-click-data="SIGNATURE GIFT WRAPPING">SIGNATURE GIFT WRAPPING</a> -->
-						<a href="javascript:void(0)" ap-click-area="floating menu" ap-click-name="click floating menu" ap-click-data="SKIN TREATMENT ROOM">SKIN TREATMENT ROOM</a>
-						<a href="javascript:void(0)" ap-click-area="floating menu" ap-click-name="click floating menu" ap-click-data="RETRINITY SPA">RETRINITY SPA</a>
-						<a href="javascript:void(0)" ap-click-area="floating menu" ap-click-name="click floating menu" ap-click-data="ABSOLUTE CLUB">ABSOLUTE CLUB</a>
-					</div>
+					<div class="link"></div>
 				</div>
+				<!-- //Special menu-->
 			</header>
-			<!-- // header -->
-			
-			<link rel="stylesheet" href="./story/int_common.css" />
-
-<main id="container" ap-type="content">
-	<h1>Brand Story</h1>
-	<article id="content" class="our_story">
-		<ul class="breadcrumbs">
-			<li style="color: #dddddd">
-				<a href="/int/en/index.html">HOME</a>
-			</li>
-			<li style="color: #dddddd">
-				<a href="/int/en/discover/our-story.html">DISCOVER</a>
-			</li>
-			<li style="color: #dddddd">
-				<a href="/int/en/discover/our-story.html">OUR STORY</a>
-			</li>
-		</ul>
-
-		<section class="story_keyvisual sclElm">
-			<div class="kv_video">
-				<video poster="/int/en/resource/images/discover/our_story_apmonogram_poster_int_231027.jpg" src="/int/en/resource/images/discover/our_story_apmonogram_int_231027.mp4" autoplay muted playsinline loop></video>
-			</div>
-			<button class="btn_scroll">Scroll</button>
-		</section>
-		
-		<section class="story_brand scroll_ani sclElm">
-			<div class="brand_intro">
-				<div class="text_info" tabindex="0">
-					<div class="text_area">
-						<h3>"WHAT IF WE COULD MAKE OUR NATURAL SKIN EVEN BETTER<em>?</em>"</h3>
-						<p>
-							Our journey began with a simple, yet seemingly impossible dream.<br>								
-							We believe beauty knows no bounds. <br>
-							And we’re working at the vanguard of skincare science innovation to unveil revolutionary, <br>
-							high-performance solutions that transcend conventional limitations.
-						</p>
-						<a href="#" class="btn_more btn_right box">Brand Film</a>
-					</div>
-				</div>
-			</div>
-			<div class="interview_video">
-				<div class="video">
-					<video src="/int/en/resource/images/discover/our_story_brandfilm_int_231027.mp4#t=0.001" id="video1" playsinline>Brand Film</video>
-					<button class="play_btn" onclick="playHz('video1')">play</button>
-				</div>
-				<button class="btn_more btn_left" onclick="pauseHz('video1')">Close Brand Film</button>
-			</div>
-			<script>
-				
-			</script>
-		</section>
-
-		<section class="story_content sclElm_last">
-			<div class="key_line dark scroll_ani" tabindex="0">
-				<div class="text_info">
-					<h2>
-						<ul class="title only_pc">
-							<li>
-								<span>APEX&nbsp;</span>
-								<span>OF&nbsp;</span>
-								<span>SKINCARE&nbsp;</span>
-							</li>
-							<li>
-								<span>TO&nbsp;</span>
-								<span>UNVEIL&nbsp;</span>
-								<span>BEAUTY</span>
-								<span>BEYOND</span>
-							</li>
-						</ul>
-						<ul class="title only_mobile">
-							<li>
-								<span>APEX&nbsp;</span>
-								<span>OF&nbsp;</span>
-								<span>SKINCARE&nbsp;</span>
-							</li>
-							<li>
-								<span>TO&nbsp;</span>
-								<span>UNVEIL&nbsp;</span>
-							</li>
-							<li>
-								<span>BEAUTY</span>
-								<span>BEYOND</span>
-							</li>
-						</ul>
-					</h2>
-					<div>
-						<p>Reaching new heights of beauty by embracing boundless innovation</p>
-						<p> - welcome to apex of skincare, AP</p>
-					</div>
-				</div>
-				<div class="video">
-					<video poster="/int/en/resource/images/discover/our_story_slogan_poster_int_231027.jpg" src="/int/en/resource/images/discover/our_story_slogan_int_231027.mp4" muted autoplay loop playsinline>video description</video>
-					<div class="voddescription">video description</div>
-					<div class="box" data-trigger="our_story-trigger_box_sub-box"></div>
-				</div>
-			</div>
-
-			<div class="skin_science" tabindex="0">
-				<h2>
-					<ul class="title scroll_ani">
-						<li>
-							<span>AP&nbsp;</span>
-							<span>SKIN&nbsp;</span>
-							<span>SCIENCE&nbsp;</span>
+			<main id="container" ap-type="content">
+				<h1>Brand Story</h1>
+				<article id="content" class="our_story">
+					<ul class="breadcrumbs">
+						<li style="color: #dddddd">
+							<a href="/int/en/index.html">HOME</a>
+						</li>
+						<li style="color: #dddddd">
+							<a href="/int/en/discover/our-story.html">DISCOVER</a>
+						</li>
+						<li style="color: #dddddd">
+							<a href="/int/en/discover/our-story.html">OUR STORY</a>
 						</li>
 					</ul>
-				</h2>
 
-				<div class="screen">
-					<div class="type_a scroll_ani">
-						<div class="text_info">
-							<h3>BREAKTHROUGH TECHNOLOGY</h3>
-							<p>Surpassing the realm of cosmetics by driving skincare innovation through extensive research and close collaborations with global research institutions</p>
+					<section class="story_keyvisual sclElm">
+						<div class="kv_video">
+							<video poster="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_apmonogram_poster_int_231027.jpg" src="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_apmonogram_int_231027.mp4" autoplay muted playsinline loop></video>
 						</div>
-						<span class="img mix_luminosity scroll_ani">
-							<picture>
-								<source srcset="/int/en/resource/images/discover/our_story_img_1_mo_int_231027.jpg" media="(max-width: 768px)">
-								<img src="/int/en/resource/images/discover/our_story_img_1_pc_int_231027.jpg" alt="BREAKTHROUGH TECHNOLOGY">
-							</picture>
-						</span>
-					</div>
-					<div class="type_b scroll_ani">
-						<span class="img">
-							<picture>
-								<source srcset="/int/en/resource/images/discover/our_story_img_2_mo_int_231027.jpg" media="(max-width: 768px)">
-								<img src="/int/en/resource/images/discover/our_story_img_2_pc_int_231027.jpg" alt="PATENTED NOVEL INGREDIENTS">
-							</picture>
-						</span>
-						<div class="text_info scroll_ani">
-							<h3>PATENTED NOVEL INGREDIENTS</h3>
-							<p>By deconstructing ingredients into their purest molecular structures, we uncovered exceptional ingredients that deliver remarkable skin transformations, surpassing the limits of conventional skincare solutions</p>
+						<button class="btn_scroll">Scroll</button>
+					</section>
+
+					<section class="story_brand scroll_ani sclElm">
+						<div class="brand_intro">
+							<div class="text_info" tabindex="0">
+								<div class="text_area">
+									<h3>"WHAT IF WE COULD MAKE OUR NATURAL SKIN EVEN BETTER<em>?</em>"</h3>
+									<p>
+										Our journey began with a simple, yet seemingly impossible dream.<br />
+										We believe beauty knows no bounds. <br />
+										And we’re working at the vanguard of skincare science innovation to unveil revolutionary, <br />
+										high-performance solutions that transcend conventional limitations.
+									</p>
+									<a href="#" class="btn_more btn_right box">Brand Film</a>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="type_c scroll_ani">
-						<div class="text_info">
-							<h3>EXPERT TESTED VISIBLE RESULTS</h3>
-							<p>In collaboration with expert evaluation organizations, including twin clinical and medical studies, our industry-leading clinical testing method promises dramatic results</p>
+						<div class="interview_video">
+							<div class="video">
+								<video src="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_brandfilm_int_231027.mp4#t=0.001" id="video1" playsinline>Brand Film</video>
+								<button class="play_btn" onclick="playHz('video1')">play</button>
+							</div>
+							<button class="btn_more btn_left" onclick="pauseHz('video1')">Close Brand Film</button>
 						</div>
-						<span class="img mix_luminosity scroll_ani">
-							<picture>
-								<source srcset="/int/en/resource/images/discover/our_story_img_3_mo_int_231027.jpg" media="(max-width: 768px)">
-								<img src="/int/en/resource/images/discover/our_story_img_3_pc_int_231027.jpg" alt="EXPERT TESTED VISIBLE RESULTS">
-							</picture>
-						</span>
-					</div>
-				</div>
-			</div>
+						<script></script>
+					</section>
 
-			<div class="collection scroll_ani_half" tabindex="0">
-				<div class="layout_inner">
-					<div class="bg_wrap">
-						<img src="https://amc.apglobal.com/image/384224417642/image_k19832uit93s14chdmsbbc9p6u/-FJPG" alt="THE ESSENTIALS" />
-					</div>
-					<h2>
-						<span>THE ESSENTIALS</span>
-					</h2>
-					<p>
-						Indulge in a new dimension of skin transformation with AP's most beloved products.
-					</p>
-					<a href="/int/en/pr/prime-reserve.html">THE MORE</a>
-				</div>
-			</div>
-		</section>
+					<section class="story_content sclElm_last">
+						<div class="key_line dark scroll_ani" tabindex="0">
+							<div class="text_info">
+								<h2>
+									<ul class="title only_pc">
+										<li>
+											<span>APEX&nbsp;</span>
+											<span>OF&nbsp;</span>
+											<span>SKINCARE&nbsp;</span>
+										</li>
+										<li>
+											<span>TO&nbsp;</span>
+											<span>UNVEIL&nbsp;</span>
+											<span>BEAUTY</span>
+											<span>BEYOND</span>
+										</li>
+									</ul>
+									<ul class="title only_mobile">
+										<li>
+											<span>APEX&nbsp;</span>
+											<span>OF&nbsp;</span>
+											<span>SKINCARE&nbsp;</span>
+										</li>
+										<li>
+											<span>TO&nbsp;</span>
+											<span>UNVEIL&nbsp;</span>
+										</li>
+										<li>
+											<span>BEAUTY</span>
+											<span>BEYOND</span>
+										</li>
+									</ul>
+								</h2>
+								<div>
+									<p>Reaching new heights of beauty by embracing boundless innovation</p>
+									<p>- welcome to apex of skincare, AP</p>
+								</div>
+							</div>
+							<div class="video">
+								<video poster="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_slogan_poster_int_231027.jpg" src="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_slogan_int_231027.mp4" muted autoplay loop playsinline>video description</video>
+								<div class="voddescription">video description</div>
+								<div class="box" data-trigger="our_story-trigger_box_sub-box"></div>
+							</div>
+						</div>
 
-	</article>
-</main>
-<script>
-	$(".btn_scroll").on("click", function () {
-		$("html,body")
-			.stop()
-			.animate({ scrollTop: $(".story_brand").offset().top + "px" }, 100);
-	});
+						<div class="skin_science" tabindex="0">
+							<h2>
+								<ul class="title scroll_ani">
+									<li>
+										<span>AP&nbsp;</span>
+										<span>SKIN&nbsp;</span>
+										<span>SCIENCE&nbsp;</span>
+									</li>
+								</ul>
+							</h2>
 
+							<div class="screen">
+								<div class="type_a scroll_ani">
+									<div class="text_info">
+										<h3>BREAKTHROUGH TECHNOLOGY</h3>
+										<p>Surpassing the realm of cosmetics by driving skincare innovation through extensive research and close collaborations with global research institutions</p>
+									</div>
+									<span class="img mix_luminosity scroll_ani">
+										<picture>
+											<source srcset="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_img_1_mo_int_231027.jpg" media="(max-width: 768px)" />
+											<img src="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_img_1_pc_int_231027.jpg" alt="BREAKTHROUGH TECHNOLOGY" />
+										</picture>
+									</span>
+								</div>
+								<div class="type_b scroll_ani">
+									<span class="img">
+										<picture>
+											<source srcset="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_img_2_mo_int_231027.jpg" media="(max-width: 768px)" />
+											<img src="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_img_2_pc_int_231027.jpg" alt="PATENTED NOVEL INGREDIENTS" />
+										</picture>
+									</span>
+									<div class="text_info scroll_ani">
+										<h3>PATENTED NOVEL INGREDIENTS</h3>
+										<p>By deconstructing ingredients into their purest molecular structures, we uncovered exceptional ingredients that deliver remarkable skin transformations, surpassing the limits of conventional skincare solutions</p>
+									</div>
+								</div>
+								<div class="type_c scroll_ani">
+									<div class="text_info">
+										<h3>EXPERT TESTED VISIBLE RESULTS</h3>
+										<p>In collaboration with expert evaluation organizations, including twin clinical and medical studies, our industry-leading clinical testing method promises dramatic results</p>
+									</div>
+									<span class="img mix_luminosity scroll_ani">
+										<picture>
+											<source srcset="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_img_3_mo_int_231027.jpg" media="(max-width: 768px)" />
+											<img src="https://prd-en-int.ap-beauty.com/int/en/resource/images/discover/our_story_img_3_pc_int_231027.jpg" alt="EXPERT TESTED VISIBLE RESULTS" />
+										</picture>
+									</span>
+								</div>
+							</div>
+						</div>
 
-	if (window.innerWidth) {
-		if (window.innerWidth < 1281) {
-			var headerH = 61;
-		} else {
-			var headerH = 83;
-		}
-	}
-	// 스크롤 모션
-	var scrollAnchorFlag = false;
-	var lastY;
-
-	function scrollAnchor(target) {
-
-		$(target).each(
-			function (index) {
-				$(this).on("touchmove", function (e) {
-					var currentY = e.originalEvent.touches[0].clientY;
-					if(currentY > lastY){
-						// moved down
-						console.log('moved down')
-						console.log(e.currentTarget)
-						$("html,body")
-							.stop()
-							.animate(
-								{
-									scrollTop: 500 + "px",
-								}
-							);
-					}else if(currentY < lastY){
-						// moved up
-						console.log('moved up')
-					}
-					lastY = currentY;
+						<div class="collection scroll_ani_half" tabindex="0">
+							<div class="layout_inner">
+								<div class="bg_wrap">
+									<img src="https://amc.apglobal.com/image/384224417642/image_k19832uit93s14chdmsbbc9p6u/-FJPG" alt="THE ESSENTIALS" />
+								</div>
+								<h2>
+									<span>THE ESSENTIALS</span>
+								</h2>
+								<p>Indulge in a new dimension of skin transformation with AP's most beloved products.</p>
+								<a href="/int/en/pr/prime-reserve.html">THE MORE</a>
+							</div>
+						</div>
+					</section>
+				</article>
+			</main>
+			<script>
+				$(".btn_scroll").on("click", function () {
+					$("html,body")
+						.stop()
+						.animate({ scrollTop: $(".story_brand").offset().top + "px" }, 100);
 				});
-			});
-		/* $(target).each(
-			function (index) {
-				$(this).on("mousewheel DOMMouseScroll", function (e) {
-					e.preventDefault();
-					e.stopPropagation();
-					var delta = 0;
-					if (!event) event = window.event;
-					if (event.wheelDelta) {
-						delta = event.wheelDelta / 120;
-						if (window.opera) delta = -delta;
-					} else if (event.detail) delta = -event.detail / 3;
-					var moveTop = $(window).scrollTop();
-					// 마우스휠을 위에서 아래로
-					if (delta < 0) {
-						var tt = "down";
-						if (index + 1 < $(target).length) {
-							moveTop =
-								$(target)
-									.eq(index + 1)
-									.offset().top - headerH;
-						} else {
-							moveTop = $(".sclElm_last").offset().top - headerH;
-						}
-						// 마우스휠을 아래에서 위로
+
+				if (window.innerWidth) {
+					if (window.innerWidth < 1281) {
+						var headerH = 61;
 					} else {
-						var tt = "up";
-						if (index - 1 > 0) {
-							moveTop =
-								$(target)
-									.eq(index - 1)
-									.offset().top - headerH;
-						} else {
-							moveTop = 0;
-						}
+						var headerH = 83;
 					}
-
-					if (!$("body").hasClass("scrollDisable") && scrollAnchorFlag == false) {
-						scrollAnchorFlag = true;
-						// 화면 이동 0.1초(100)
-						$("html,body")
-							.stop()
-							.animate(
-								{
-									scrollTop: moveTop + "px",
-								},
-								{
-									duration: 100,
-									complete: function () {
-										scrollAnchorFlag = false;
-										//console.log(tt);
-									},
-								}
-							);
-					}
-				});
-			},
-			{ passive: true }
-		); */
-	}
-	// scroll active
-	const io = new IntersectionObserver(
-		(entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					entry.target.classList.add("active");
-				} else {
-					entry.target.classList.remove("active");
 				}
-			});
-		},
-		{
-			threshold: 0.1,
-		}
-	);
+				// 스크롤 모션
+				var scrollAnchorFlag = false;
+				function scrollAnchor(target) {
+					$(target).each(
+						function (index) {
+							$(this).on("mousewheel DOMMouseScroll", function (e) {
+								e.preventDefault();
+								e.stopPropagation();
+								var delta = 0;
+								if (!event) event = window.event;
+								if (event.wheelDelta) {
+									delta = event.wheelDelta / 120;
+									if (window.opera) delta = -delta;
+								} else if (event.detail) delta = -event.detail / 3;
+								var moveTop = $(window).scrollTop();
+								// 마우스휠을 위에서 아래로
+								if (delta < 0) {
+									var tt = "down";
+									if (index + 1 < $(target).length) {
+										moveTop =
+											$(target)
+												.eq(index + 1)
+												.offset().top - headerH;
+									} else {
+										moveTop = $(".sclElm_last").offset().top - headerH;
+									}
+									// 마우스휠을 아래에서 위로
+								} else {
+									var tt = "up";
+									if (index - 1 > 0) {
+										moveTop =
+											$(target)
+												.eq(index - 1)
+												.offset().top - headerH;
+									} else {
+										moveTop = 0;
+									}
+								}
 
-	const aniList = document.querySelectorAll(".scroll_ani,.scroll_ani_half");
-	aniList.forEach((el) => {
-		io.observe(el);
-	});
+								if (!$("body").hasClass("scrollDisable") && scrollAnchorFlag == false) {
+									scrollAnchorFlag = true;
+									// 화면 이동 0.1초(100)
+									$("html,body")
+										.stop()
+										.animate(
+											{
+												scrollTop: moveTop + "px",
+											},
+											{
+												duration: 100,
+												complete: function () {
+													scrollAnchorFlag = false;
+													//console.log(tt);
+												},
+											}
+										);
+								}
+							});
+						},
+						{ passive: true }
+					);
+				}
 
-	scrollAnchor(".sclElm");
+				// scroll active
+				const io = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add("active");
+							} else {
+								entry.target.classList.remove("active");
+							}
+						});
+					},
+					{
+						threshold: 0.1,
+					}
+				);
 
-	function playHz(idn) {
-		document.getElementById(idn).play();
-		document.getElementById(idn).controls = true;
-		setInterval(function () {
-			if ($("#" + idn).prop("ended")) {
-				$("#" + idn)
-					.siblings(".play_btn")
-					.fadeIn();
-				document.getElementById(idn).controls = false;
-			}
-		}, 200);
-	}
-	function pauseHz(idn) {
-		document.getElementById(idn).pause();
-		document.getElementById(idn).controls = false;
-		$(".play_btn").fadeIn();
-	}
+				const aniList = document.querySelectorAll(".scroll_ani,.scroll_ani_half");
+				aniList.forEach((el) => {
+					io.observe(el);
+				});
 
-	// 비디오 재생 아이콘
-	$(".play_btn").click(function () {
-		$(this).fadeOut();
-	});
-	$(".item.right .btn_more").click(function () {
-		$(this).siblings(".video").children(".play_btn").fadeIn();
-	});
+				scrollAnchor(".sclElm");
 
-	// 인터뷰 영상 노출
-	$(".btn_right").click(function (e) {
-		offsetY = window.pageYOffset;
-		pauseHz('video1');
-		$("body").addClass("scrollDisable");
-		$('.interview_video').addClass("on");
-		e.preventDefault();
-	});
-	$(".btn_left").click(function (e) {
-		$("body").removeClass("scrollDisable");
-		$(window).scrollTop(offsetY);
-		$('.interview_video').removeClass("on");
-		e.preventDefault();
-	});
-</script>
+				if(AP_DATA_CHANNEL !== 'PC'){
+					$('.story_keyvisual').css('background','#f00');
 
+					ScrollTrigger.create({
+						trigger: ".story_keyvisual",
+						start: "top top",
+						end: "100%",
+						pin: true,
+						markers: false,
+					});
+					ScrollTrigger.create({
+						trigger: ".story_brand",
+						start: "top top",
+						end: "100%",
+						pin: true,
+						markers: false,
+					});
+					ScrollTrigger.create({
+						trigger: ".key_line",
+						start: "top top",
+						end: "100%",
+						pin: true,
+						markers: false,
+					});
+				}
+
+				function playHz(idn) {
+					document.getElementById(idn).play();
+					document.getElementById(idn).controls = true;
+					setInterval(function () {
+						if ($("#" + idn).prop("ended")) {
+							$("#" + idn)
+								.siblings(".play_btn")
+								.fadeIn();
+							document.getElementById(idn).controls = false;
+						}
+					}, 200);
+				}
+				function pauseHz(idn) {
+					document.getElementById(idn).pause();
+					document.getElementById(idn).controls = false;
+					$(".play_btn").fadeIn();
+				}
+
+				// 비디오 재생 아이콘
+				$(".play_btn").click(function () {
+					$(this).fadeOut();
+				});
+				$(".item.right .btn_more").click(function () {
+					$(this).siblings(".video").children(".play_btn").fadeIn();
+				});
+
+				// 인터뷰 영상 노출
+				$(".btn_right").click(function (e) {
+					offsetY = window.pageYOffset;
+					pauseHz("video1");
+					$("body").addClass("scrollDisable");
+					$(".interview_video").addClass("on");
+					e.preventDefault();
+				});
+				$(".btn_left").click(function (e) {
+					$("body").removeClass("scrollDisable");
+					$(window).scrollTop(offsetY);
+					$(".interview_video").removeClass("on");
+					e.preventDefault();
+				});
+			</script>
 			<footer id="footer" ap-type="footer">
 				<div class="layout_inner">
 					<ul class="footer_menu">
