@@ -87,6 +87,7 @@
 				.our_story .story_keyvisual .btn_scroll {color:#767676; padding-bottom:4.2rem; position:absolute; bottom:2rem; left:50%; transform: translateX(-50%); z-index:100}
 				.our_story .story_keyvisual .btn_scroll::after {content:""; display:block; color:#fff; width:3.6rem; height:1.3rem; background:url('https://d3dims7uu70rdw.cloudfront.net/image/384224417642/image_3afi6t3t0t7td1ai34l2qin56n/-FPNG') no-repeat; position:absolute; left:calc(50% - 1.8rem)}
 				.our_story .story_brand{overflow:hidden;position: relative;height:100vh;background:#888 url("/int/en/resource/images/discover/our_story_brandfilm_pc_int_231027.jpg") no-repeat;background-size: cover}
+				.pin{padding-top:62px!important;}
 		</style>
 
 		<div id="wrap">
@@ -406,7 +407,7 @@
 					io.observe(el);
 				});
 
-				scrollAnchor(".sclElm");
+				//scrollAnchor(".sclElm");
 
 				if(AP_DATA_CHANNEL !== 'PC'){
 					$('.story_keyvisual').css('background','#f00');
@@ -417,6 +418,7 @@
 						end: "100%",
 						pin: true,
 						markers: false,
+						toggleClass: {targets:  ".story_keyvisual", className: "pin"},
 					});
 					ScrollTrigger.create({
 						trigger: ".story_brand",
@@ -424,6 +426,7 @@
 						end: "100%",
 						pin: true,
 						markers: false,
+						toggleClass: {targets:  ".story_brand", className: "pin"},
 					});
 					ScrollTrigger.create({
 						trigger: ".key_line",
@@ -431,8 +434,11 @@
 						end: "100%",
 						pin: true,
 						markers: false,
+						toggleClass: {targets:  ".key_line", className: "pin"},
 					});
 				}
+
+				
 
 				function playHz(idn) {
 					document.getElementById(idn).play();
